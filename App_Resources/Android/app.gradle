@@ -1,6 +1,11 @@
+def versions = [:]
+versions.android_lifecycle = "2.6.1"
 // You can add your native dependencies here
 dependencies {
 //  implementation 'androidx.multidex:multidex:2.0.1'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.android_lifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$versions.android_lifecycle"
+   // implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.10"
 }
 
 android {
